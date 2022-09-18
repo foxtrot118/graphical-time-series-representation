@@ -25,8 +25,11 @@ Run the server
 python manage.py runserver
 
 Front-end
+
 Installation
+
 cd .\Client\
+
 npm install
 npm install d3
 Run the server
