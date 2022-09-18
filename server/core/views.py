@@ -6,8 +6,8 @@ from rest_framework import views
 from rest_framework import permissions
 from rest_framework.parsers import FileUploadParser
 from rest_framework.views import APIView
-from .models import Sales, Client, Employee
-from .serializers import SalesSerializer, ClientSerializer, EmployeeSerializer
+from .models import Sales, Client, Employee,Returns,Values
+from .serializers import SalesSerializer, ClientSerializer, EmployeeSerializer, ReturnsSerializer, ValuesSerializer
 
 
 import pandas as pd
@@ -33,6 +33,14 @@ class SalesView(viewsets.ModelViewSet):
     queryset = Sales.objects.all()
     serializer_class = SalesSerializer
     allowed_methods = ['post']
+
+class ValuesView(viewsets.ModelViewSet):
+    queryset = Values.objects.all()
+    serializer_class = ValuesSerializer 
+
+class ReturnsView(viewsets.ModelViewSet):
+    queryset = Returns.objects.all()
+    serializer_class = ReturnsSerializer    
 
 
 class FileUploadView(views.APIView):

@@ -211,7 +211,7 @@ export class Reports extends Component {
         <LoadingOverlay
           active={!this.state.hidden2}
           spinner
-          text='applying ARIMA and RNN algorithms'
+          text='Loading Graph'
         >
 
           <Container maxWidth='lg'>
@@ -227,10 +227,16 @@ export class Reports extends Component {
                 <Card sx={{ m: 1 }} >
                   <CardContent >
                     <Typography component="div" align="center" variant="h3" sx={{textAlign:'center' ,p: 1 }}>
-                      Time Series Forecasting using ARIMA & RNN
+                      Time Series Representation
                       </Typography>
                   <Box  sx={{minHeight:200 ,display:'flex',alignItems:'center',}} >
-                      <ul> 
+                      <ul>
+
+                  
+                      <br/>
+                      <Divider />
+                      {/*  */}
+
                       </ul>
                       </Box>
                       <Divider />
@@ -289,7 +295,7 @@ export class Reports extends Component {
                         p: 2
                       }}
                     >
-                      <Button
+                      {/* <Button
                         color="primary"
                         variant="contained"
                         onClick={this.drawArima}
@@ -308,7 +314,7 @@ export class Reports extends Component {
                         }}
                       >
                         Apply RNN Model
-                      </Button>
+                      </Button> */}
 
                     </Box>
                     <Box sx={{ maxWidth: 1000 }}>
@@ -354,6 +360,7 @@ export class Reports extends Component {
                       </Box>
                     </Box>
 
+{/*  */}
 
                     <Box
                       sx={{
@@ -362,38 +369,12 @@ export class Reports extends Component {
                         p: 2
                       }}
                     >
-                      <FormControl sx={{ m: 1, minWidth: 120 }}>
-                        <InputLabel id="demo-simple-select-helper-label">select</InputLabel>
-                        <Select
-                          labelId="demo-simple-select-label"
-                          id="demo-simple-select"
-                          value={this.state.selectedDate}
-                          label="Age"
-
-                          onChange={this.handleSelectChanege}
-                        >
-
-                          {this.state.yearsx.map((element, index) => <MenuItem key={index} value={index}>{element} </MenuItem>)}
-
-                        </Select>
-                        <FormHelperText>select a date to make prediction</FormHelperText>
-                      </FormControl>
-
-                    </Box>
-
-                    <Box
-                      sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        p: 2
-                      }}
-                    >
-                      {this.state.predicted !== null &&
+                      {/* {this.state.predicted !== null &&
                         <h3> The predicted sale is  for {this.state.selectedDate} is :
                           {'  ' + this.state.predicted + ' DA'}
                         </h3>
 
-                      }
+                      } */}
 
 
 
@@ -415,4 +396,3 @@ export class Reports extends Component {
     );
   }
 }
-

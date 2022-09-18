@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Values
+admin.site.register(Values)
+
+
+from .models import Returns
+admin.site.register(Returns)

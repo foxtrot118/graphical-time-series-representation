@@ -11,6 +11,6 @@ export const Logo = () => (
     }}
     tyle={{ textDecoration: 'none' }}
     align="center" variant="h5" >
-    Time Series Forecasting
+    Time Series Representation
   </Typography>
 );
