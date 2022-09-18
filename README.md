@@ -38,3 +38,5 @@ npm start
 ![Database returning from React ](https://i.imgur.com/EtG7Xn0.png)
 ![Dashboard](https://i.imgur.com/J6RktPG.png)
 ![Graph](https://i.imgur.com/BPcoKoL.png)
+![Reactapi](https://i.imgur.com/Co22cc5.png)
+![upload csv](https://i.imgur.com/Y8tnW3P.png)
